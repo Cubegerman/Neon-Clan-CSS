@@ -1,0 +1,224 @@
+@font-face {
+    font-family: gamefont;
+    src: url(https://raw.githubusercontent.com/South-Paw/typeface-vag-rounded/master/files/vag-rounded-400.woff2);
+}
+
+@font-face {
+	font-family: hpammo;
+	src: url(https://fonts.gstatic.com/s/montserrat/v15/JTURjIg1_i6t8kCHKm45_dJE3gnD_g.woff2);
+}
+/*MAIN MENU*/
+    /* LOGO */
+    #mainLogo {
+        content:url(https://cdn.discordapp.com/attachments/989073682355851274/989074147357380618/unknown.png);
+		}
+    #seasonLabel {
+        display: none
+    }
+.material-icons-outlined {
+	color: white!important
+}
+#menuItemContainer {
+    background: transparent;
+}
+.button,.button:hover {
+	position: relative;
+	border: none!important;
+	background-color: transparent;
+	
+	}
+.menuClassPlayerClan {
+    animation: rainbowT .5s linear infinite;
+    animation-name: rainbowT;
+}
+.leaderNameM span{
+    animation: rainbowT .5s linear infinite;
+    animation-name: rainbowT;
+} 
+#customizeButton,#policeButton {
+	position: relative;
+	bottom: 0px;
+	border: none!important;
+	background-color: transparent;
+	font-size: 40px !important;
+	
+}
+.adsbygoogle:adsbygoogle-noablate {
+	display: none!important;
+}
+.menuItemTitle {
+    display: none!important
+}
+#hudClassIcon, #timerIcon, #maxHP, #healthBar, #challIcon, #ammoMax, #ammoIcon, #reloadMsg {
+	display: none !important
+}
+#healthValueHolder {
+	background-color: var(--transp);
+	width: 75px;
+	height: 65px;
+	etter-spacing: 1px;
+	position: fixed;
+	left: 35%;
+	bottom: 10%;
+	margin-bottom: 10%;
+	align-items: center
+}
+#healthValue {
+	font-size: 60px;
+	text-align: center;
+	color: #fff;
+	margin-top: 0;
+	will-change: unset;
+	text-shadow: var(--outline)
+}
+#ammoDisplay {
+    background-color: var(--transp) !important;
+    width: 65px;
+    height: 10px;
+	top: calc(50% + 35px);
+    left: 48.76%
+}
+#ammoVal {
+    position: fixed;
+    right: 35% !important;
+    bottom: 10% !important;
+    margin-bottom: 10% !important;
+    font-size: 60px !important;
+    text-shadow: var(--outline);
+}
+#ammoDisplay {
+    background-color: var(--transp);
+    letter-spacing: 1px;
+    border-radius: 0px;
+    position: fixed;
+    right: 30%;
+    bottom: 10%;
+    margin-bottom: 10%;
+    padding: 0;
+    padding-top: 0;
+    padding-left: 0;
+    transform: none;
+}
+#timerDisplay {
+    left: 50%;
+    top: 100px;
+	background-color: transparent;
+	}
+.leaderNameM, .newLeaderNameM, .endTableN[style='color: #fff;'] {
+    color: #fff;
+    }
+.leaderNameF, .newLeaderNameF, .endTableN[style='color: rgba(255,255,255,.6);'] {
+    color: #fff !important;
+    }
+.leaderName, .newLeaderName, .endTableN[style='color: #eb5656;'] {
+    color: violet !important;
+    }
+.leaderScore {
+    color: #fff !important;
+    }
+.leaderCounter {
+    color: #fff !important;
+    }
+#leaderDisplay {
+    background-color: var(--transp) !important
+}
+.weapIcon {
+    margin-right: 0 !important;
+    }
+.weapIcon[style*="opacity: 0.7"], .weapIcon[style*="opacity:0.7"] {
+    position: fixed;
+    right: calc(50% - 64px);
+    bottom: -140px;
+    opacity: 0 !important;
+}
+.weapIcon[style*="opacity:1"], .weapIcon[style*="opacity: 1"] {
+    position: fixed;
+    bottom: 200px;
+    right: calc(50% - 64px);
+}
+.weapItem:last-child .weapIcon {
+    transform: translateY(16px);
+}
+.weapKey {
+    display: none
+}
+#pingText:after {
+    content: ' ms';
+    color: #fff
+}
+#pingText {
+    color: #fff; 
+}
+#pingDisplay .material-icons {
+    display: none
+}
+#fpsDisplay {
+    color: #fff;
+}
+#ingameFPS {
+	color: #fff!important;
+}
+#menuPingDisplay, #menuFPSDisplay {
+        color: var(--white) !important;
+}
+#menuFPS {
+        color: var(--white) !important
+    }
+    #menuPingText {
+        color: var(--white);
+        }
+    #menuPingText:after {
+        content: " ms";
+        color: var(--white);
+        }
+    #menuPingDisplay .material-icons {
+        display: none
+    }
+#newsBody,#newsStat,#newsHed,#newsHolder,#rankedBlog,#updateAd,#streamContainer {
+    display: none!important;
+}
+#voiceDisplay {
+	background-color: transparent!important;
+}
+#curGameInfo {
+	color:skyblue
+}
+#menuClassContainer {
+	position: fixed;
+	top: 60%;
+	left: 70%;
+	transform:scale(0.75)
+	}
+
+
+#menuLevelBar.progressBarInner{
+    background: linear-gradient(90deg,#fff,74%,blue);
+}
+
+.chalXPBarC {
+    background-color: linear-gradient(90deg,#fff,74%,blue);
+}
+
+.xpEndBarB{
+	background:linear-gradient(90deg,#fff,74%,blue);
+}
+
+.clsXPBar{
+	background-color:linear-gradient(90deg,#fff,74%,blue);;
+}
+
+#igXPBar{
+	background-color:linear-gradient(90deg,#fff,74%,blue);
+}
+
+#igXPBarProg{
+    background-color: linear-gradient(90deg,#fff,74%,blue);
+}
+/*.xpBarV{
+	background-color: linear-gradient(90deg,#fff,74%,blue);
+}*/
+
+.xpLvl{
+	background: linear-gradient(90deg,#fff,74%,blue);
+}
+

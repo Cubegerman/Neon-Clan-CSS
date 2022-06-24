@@ -203,7 +203,12 @@
     height: 100%;
     background-image: linear-gradient(to right,white,blue)
 }
-.weapIcon {
+
+.weapIcon{
+    
+}
+
+/* .weapIcon {
     margin-right: 0 !important;
 }
 
@@ -222,11 +227,17 @@
 
 .weapItem:last-child .weapIcon {
     transform: translateY(16px);
-}
+}*/
 
 .weapKey {
     display: none
+} 
+
+#weapDisplay {
+    bottom: 50%;
+    transform: translateY(50%);
 }
+
 
 #pingText:after {
     content: ' ms';

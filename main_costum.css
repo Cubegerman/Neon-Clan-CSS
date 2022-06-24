@@ -3,6 +3,16 @@
     src: url(https://raw.githubusercontent.com/South-Paw/typeface-vag-rounded/master/files/vag-rounded-400.woff2);
 }
 
+/* @font-face {
+    font-family:gamefont;
+    src:url(https://dl.dropboxusercontent.com/s/hi2sp9a5nq9t9ml/kaorigel.medium.ttf?dl=0)
+} */
+
+/* @font-face {
+    font-family: gamefont;
+    src: url(https://github.com/CrafterlKrunker/NullClient/blob/main/app/fonts/);
+} */
+
 @font-face {
 	font-family: hpammo;
 	src: url(https://fonts.gstatic.com/s/montserrat/v15/JTURjIg1_i6t8kCHKm45_dJE3gnD_g.woff2);
@@ -60,15 +70,46 @@
     display: none!important
 }
 
-#hudClassIcon, #timerIcon, #maxHP, #healthBar, #challIcon, #ammoMax, #ammoIcon, #reloadMsg {
+#hudClassIcon, #timerIcon, #maxHP, #challIcon, #ammoMax, #ammoIcon, #reloadMsg {
 	display: none !important
 }
 
+#healthBar{
+    position: fixed;
+    height: 10px;
+    width: auto;
+    will-change: unset;
+    left: 35%;
+	bottom: 9%;
+}
+
+
+
+/* #healthBar .healthBarSeg:not(:last-child) .hpBSeg {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+  
+#healthBar .healthBarSeg:not(:first-child) .hpBSeg {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+#healthBar .healthBarSeg {
+    width: 100%;
+    -webkit-transform: unset;
+            transform: unset;
+    -webkit-transition: all 280ms;
+    transition: all 280ms;
+    margin-right: 0px;
+    background: transparent;
+} */
+
 #healthValueHolder {
-	background-color: var(--transp);
+	background-color: transparent;
 	width: 75px;
 	height: 65px;
-	etter-spacing: 1px;
+	letter-spacing: 1px;
 	position: fixed;
 	left: 35%;
 	bottom: 10%;
@@ -79,7 +120,7 @@
 #healthValue {
 	font-size: 60px;
 	text-align: center;
-	color: #fff;
+	color: #8a8a8a;
 	margin-top: 0;
 	will-change: unset;
 	text-shadow: var(--outline)
@@ -100,10 +141,11 @@
     margin-bottom: 10% !important;
     font-size: 60px !important;
     text-shadow: var(--outline);
+    color: #8a8a8a;
 }
 
 #ammoDisplay {
-    background-color: var(--transp);
+    background-color: #8a8a8a;
     letter-spacing: 1px;
     border-radius: 0px;
     position: fixed;
@@ -132,7 +174,7 @@
 }
 
 .leaderName, .newLeaderName, .endTableN[style='color: #eb5656;'] {
-    color: skyblue !important;
+    color: #b10000 !important;
 }
 
 .leaderScore {
@@ -149,6 +191,18 @@
 
 
 /*HUD*/
+
+#slid_xpBarCol{
+    background: white;
+}
+
+#slid_xpBarCol2{
+    background: blue;
+}
+.xpBarB {
+    height: 100%;
+    background-image: linear-gradient(to right,white,blue)
+}
 .weapIcon {
     margin-right: 0 !important;
 }
@@ -214,6 +268,10 @@
 
 
 /*Canvas*/
+#mLevelCont,#signedInHeaderBar{
+    background: #8a8a8a;
+}
+
 #newsBody,#newsStat,#newsHed,#newsHolder,#rankedBlog,#updateAd,#streamContainer {
     display: none!important;
 }
@@ -310,35 +368,34 @@
      text-shadow: var(--outline)
  }
  #chatInput {
-     background-color: var(--transp) !important;
-     border: 3px solid skyblue !important;
+     background-color: #8a8a8a99 !important;
+     /* border: 3px solid skyblue !important;*/
      color: var(--white);
-     text-shadow: var(--outline);
+     /*text-shadow: var(--outline);
      position: fixed;
-     padding-left: 10px;
-     left:21%;
-     bottom:2%;
+     padding: 10px;
+     bottom:2%; */
  }
  #chatInputHolder {
      background-color: var(--transp) !important;
      border: var(--transp) !important;
  }
  #chatList {
-     background-color: var(--transp) !important;
-     border: 3px solid skyblue;
+     background-color: #8a8a8a99!important;
+     /* border: 3px solid skyblue;
      z-index: 10000;
      position: fixed;
-     bottom: 2%;
-     padding-left: 10px;
+     bottom: 5%;
+     padding: 10px; */
      height: fit-content;
      
  }
  #chatHolder {
      position: absolute;
      z-index: 9999;
-     width: 340px;
+     width: auto;
      bottom: 0% !important;
-     left: calc(auto+ 100px)!important;
+     /* left: calc(auto+ 100px)!important; */
  }
  #uiBase.onMenu #chatHolder {
      bottom: 0px !important;
@@ -429,4 +486,29 @@ background: #fff;
 } */
 
 
-/*Hubbsi mach dinge die dir einfallen*/
+/* .clanInput {
+    float: right;
+    background-color: rgba(0,0,0,.2);
+    border: none;
+    color: #000;
+    border-radius: 4px;
+    font-size: 18px;
+    width: 200px;
+    padding-left: 10px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-right: 10px
+}
+
+.clanRolD {
+    display: inline-block;
+    vertical-align: middle;
+    border: none;
+    background: #e3e3e3;
+    padding: 6px;
+    padding-bottom: 6px;
+    float: right;
+    margin-left: 10px;
+    font-size: 15px;
+    border-radius: 4px
+} */

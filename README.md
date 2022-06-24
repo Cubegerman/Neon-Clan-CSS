@@ -2,4 +2,6 @@
 Only Neon Clanmember CSS
 
 
-##Put that in css folder of the Krunker Ressource Swapper
+#How to Use?
+
+Put that in css folder of the Krunker Ressource Swapper.

@@ -645,3 +645,7 @@ background: #fff;
 	bottom: 70%;
     background-color:var(--transparent);
 }
+
+#slid_healthColE{
+    background: #ff8888;
+}

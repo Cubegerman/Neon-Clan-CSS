@@ -1,6 +1,18 @@
+:root {
+    --mainmenuclr: #8a8a8a;
+    --fff:  #fff;
+    --transparent:  #ffffff00;
+    --blue: blue;
+}
+
 @font-face {
     font-family: gamefont;
     src: url(https://raw.githubusercontent.com/South-Paw/typeface-vag-rounded/master/files/vag-rounded-400.woff2);
+}
+
+@font-face {
+	font-family: hpammo;
+	src: url(https://fonts.gstatic.com/s/montserrat/v15/JTURjIg1_i6t8kCHKm45_dJE3gnD_g.woff2);
 }
 
 /* @font-face {
@@ -12,11 +24,6 @@
     font-family: gamefont;
     src: url(https://github.com/CrafterlKrunker/NullClient/blob/main/app/fonts/);
 } */
-
-@font-face {
-	font-family: hpammo;
-	src: url(https://fonts.gstatic.com/s/montserrat/v15/JTURjIg1_i6t8kCHKm45_dJE3gnD_g.woff2);
-}
 
 
 /*MAIN MENU*/
@@ -30,34 +37,32 @@
 }
 
 .material-icons-outlined {
-	color: white!important
+	color: var(--fff)!important;
 }
 #menuItemContainer {
-    background: transparent;
+    background: var(--transparent);
 }
 
 .button,.button:hover {
 	position: relative;
 	border: none!important;
-	background-color: transparent;
+	background-color: var(--transparent);
 	
 }
 
 .menuClassPlayerClan {
     animation: rainbowT .5s linear infinite;
-    animation-name: rainbowT;
 }
 
 .leaderNameM span{
     animation: rainbowT .5s linear infinite;
-    animation-name: rainbowT;
 } 
 
 #customizeButton,#policeButton {
 	position: relative;
 	bottom: 0px;
 	border: none!important;
-	background-color: transparent;
+	background-color: var(--transparent);
 	font-size: 40px !important;
 	
 }
@@ -66,20 +71,18 @@
 	display: none!important;
 }
 
-.menuItemTitle {
-    display: none!important
+.menuItemTitle,#hudClassIcon, #timerIcon, #maxHP, #challIcon, #ammoMax, #ammoIcon, #reloadMsg{
+    display: none;
 }
 
-#hudClassIcon, #timerIcon, #maxHP, #challIcon, #ammoMax, #ammoIcon, #reloadMsg {
-	display: none !important
-}
 
 #healthBar{
     position: fixed;
-    height: 10px;
+    height: 15px;
     width: auto;
     will-change: unset;
-    left: 35%;
+    left: 42.5%;
+    right: 42.5%;
 	bottom: 9%;
 }
 
@@ -105,47 +108,52 @@
     background: transparent;
 } */
 
+/* .hpBSeg,.healthBarSeg {
+    border-radius: 5%;
+    background-color: var(--transparent);
+} */
+
 #healthValueHolder {
-	background-color: transparent;
-	width: 75px;
-	height: 65px;
-	letter-spacing: 1px;
-	position: fixed;
-	left: 35%;
-	bottom: 10%;
-	margin-bottom: 10%;
-	align-items: center
+    background-color: transparent;
+    width: 75px;
+    height: 65px;
+    letter-spacing: 1px;
+    position: fixed;
+    left: 35%;
+    bottom: 0%;
+    margin-bottom: 10%;
+    align-items: center
 }
 
 #healthValue {
 	font-size: 60px;
 	text-align: center;
-	color: #8a8a8a;
+	color: var(--mainmenuclr);
 	margin-top: 0;
 	will-change: unset;
 	text-shadow: var(--outline)
 }
 
 #ammoDisplay {
-    background-color: var(--transp) !important;
+    background-color: var(--transparent) !important;
     width: 65px;
     height: 10px;
 	top: calc(50% + 35px);
-    left: 48.76%
+    left: 48.76%;
 }
 
 #ammoVal {
     position: fixed;
     right: 35% !important;
-    bottom: 10% !important;
+    bottom: 0% !important;
     margin-bottom: 10% !important;
     font-size: 60px !important;
     text-shadow: var(--outline);
-    color: #8a8a8a;
+    color: var(--mainmenuclr);
 }
 
 #ammoDisplay {
-    background-color: #8a8a8a;
+    background-color: var(--mainmenuclr);
     letter-spacing: 1px;
     border-radius: 0px;
     position: fixed;
@@ -161,16 +169,16 @@
 #timerDisplay {
     left: 50%;
     top: 100px;
-	background-color: transparent;
+	background-color: var(--mainmenuclr);
 }
 
 
 /*Leaderboard*/
 .leaderNameM, .newLeaderNameM, .endTableN[style='color: #fff;'] {
-    color: #fff;
+    color: var(--mainmenuclr);
 }
 .leaderNameF, .newLeaderNameF, .endTableN[style='color: rgba(255,255,255,.6);'] {
-    color: #fff !important;
+    color: var(--mainmenuclr) !important;
 }
 
 .leaderName, .newLeaderName, .endTableN[style='color: #eb5656;'] {
@@ -178,35 +186,36 @@
 }
 
 .leaderScore {
-    color: #fff !important;
+    color: var(--mainmenuclr) !important;
 }
 
 .leaderCounter {
-    color: #fff !important;
+    color: var(--mainmenuclr) !important;
 }
 
 #leaderDisplay {
-    background-color: var(--transp) !important
+    background-color: var(--transp) !important;
+    border: 4px solid var(--mainmenuclr);
 }
 
 
 /*HUD*/
 
 #slid_xpBarCol{
-    background: white;
+    background: var(--fff);
 }
 
 #slid_xpBarCol2{
-    background: blue;
+    background: var(--blue);
 }
 .xpBarB {
     height: 100%;
-    background-image: linear-gradient(to right,white,blue)
+    background-image: linear-gradient(to right,var(--fff),var(--blue))
 }
 
-.weapIcon{
+/* .weapIcon{
     
-}
+} */
 
 /* .weapIcon {
     margin-right: 0 !important;
@@ -241,37 +250,37 @@
 
 #pingText:after {
     content: ' ms';
-    color: #fff
+    color: var(--mainmenuclr);
 }
 
 #pingText {
-    color: #fff; 
+    color: var(--blue); 
 }
 
 #pingDisplay .material-icons {
-    display: none
+    display: none;
 }
 
 #fpsDisplay {
-    color: #fff;
+    color: var(--mainmenuclr);
 }
 
 #ingameFPS {
-	color: #fff!important;
+	color: var(--blue)!important;
 }
 
 #menuPingDisplay, #menuFPSDisplay {
-        color: var(--white) !important;
+        color: var(--fff) !important;
 }
 #menuFPS {
-        color: var(--white) !important;
+        color: var(--fff) !important;
     }
     #menuPingText {
-        color: var(--white);
+        color: var(--fff);
         }
     #menuPingText:after {
         content: " ms";
-        color: var(--white);
+        color: var(--fff);
         }
     #menuPingDisplay .material-icons {
         display: none;
@@ -279,19 +288,21 @@
 
 
 /*Canvas*/
-#mLevelCont,#signedInHeaderBar{
-    background: #8a8a8a;
+
+
+#mLevelCont,#signedInHeaderBar,#signedOutHeaderBar{
+    background: var(--mainmenuclr);
 }
 
-#newsBody,#newsStat,#newsHed,#newsHolder,#rankedBlog,#updateAd,#streamContainer {
+#newsBody,#newsStat,#newsHed,#newsHolder,#rankedBlog,#updateAd,#streamContainer,#krDiscountAd {
     display: none!important;
 }
 #voiceDisplay {
-	background-color: transparent!important;
+	background-color: var(--transparent)!important;
 }
 
 #menuItemContainer{
-    background-color: #8a8a8a;
+    background-color: var(--mainmenuclr);
 }
 
 #curGameInfo {
@@ -312,99 +323,101 @@
 
 /*Xp bars*/
 #menuLevelBar.progressBarInner{
-    background: linear-gradient(90deg,#fff,74%,blue);
+    background: linear-gradient(90deg,var(--fff),74%,var(--blue));
 }
 
 .chalXPBarC {
-    background-color: linear-gradient(90deg,#fff,74%,blue);
+    background-color: linear-gradient(90deg,var(--fff),74%,var(--blue));
 }
 
 .xpEndBarB{
-	background:linear-gradient(90deg,#fff,74%,blue);
+	background:linear-gradient(90deg,var(--fff),74%,var(--blue));
 }
 
 .clsXPBar{
-	background-color:linear-gradient(90deg,#fff,74%,blue);
+	background-color:linear-gradient(90deg,var(--fff),74%,var(--blue));
 }
 
 #igXPBar{
-	background-color:linear-gradient(90deg,#fff,74%,blue);
+	background-color:linear-gradient(90deg,var(--fff),74%,var(--blue));
 }
 
 #igXPBarProg{
-    background-color: linear-gradient(90deg,#fff,74%,blue);
+    background-color: linear-gradient(90deg,var(--fff),74%,var(--blue));
 }
 /*.xpBarV{
-	background-color: linear-gradient(90deg,#fff,74%,blue);
+	background-color: linear-gradient(90deg,var(--fff),74%,var(--blue));
 }*/
 
 /*.xpLvl{
-	background: linear-gradient(90deg,#fff,74%,blue);
+	background: linear-gradient(90deg,var(--fff),74%,var(--blue));
 }*/
 
 
 
 /*Chat*/
 .chatItem {
-    background-color: var(--transp) !important;
-    color: (--white);
+    background-color: var(--transparent) !important;
+    color: var(--fff);
     text-shadow: var(--outline)
  }
  .chatMsg {
-     color: var(--white);
+     color: var(--fff);
      text-shadow: var(--outline)
  }
  .chatMsg [style="color:#fff"] {
-     color: var(--white) !important;
-     text-shadow: var(--outline)
+     color: var(--fff) !important;
+     text-shadow: var(--outline);
  }
  .chatMsg[style="color:#fc03ec"] {
-     color: white !important;
-     text-shadow: var(--outline)
+     color: #fff !important;
+     text-shadow: var(--outline);
  }
  .chatMsg [style="color:#eb5656"] {
-     color: white!important;
-     text-shadow: var(--outline)
+     color: #fff!important;
+     text-shadow: var(--outline);
  }
  .chatMsg [style="color:#9eeb56"] {
-     color: white !important;
-     text-shadow: var(--outline)
+     color: #fff !important;
+     text-shadow: var(--outline);
  }
  .chatMsg [style="color:#76ff03"] {
-     color: white !important;
-     text-shadow: var(--outline)
+     color: #fff !important;
+     text-shadow: var(--outline);
  }
  #chatInput::placeholder {
      color: rgb(255 255 255);
-     text-shadow: var(--outline)
+     text-shadow: var(--outline);
  }
  #chatInput {
      background-color: #8a8a8a99 !important;
      /* border: 3px solid skyblue !important;*/
-     color: var(--white);
-     /*text-shadow: var(--outline);
+     color: var(--fff);
+     /*text-shadow: var(--outline);*/
      position: fixed;
-     padding: 10px;
-     bottom:2%; */
+     /*padding: 10px;*/
+     bottom:2%;
  }
  #chatInputHolder {
-     background-color: var(--transp) !important;
-     border: var(--transp) !important;
+     background-color: var(--transparent) !important;
+     border: var(--transparent) !important;
  }
  #chatList {
      background-color: #8a8a8a99!important;
      /* border: 3px solid skyblue;
-     z-index: 10000;
+     z-index: 10000;*/
      position: fixed;
-     bottom: 5%;
-     padding: 10px; */
+     left: auto;
+     bottom: 6%;
+     /*padding: 10px; */
      height: fit-content;
      
  }
  #chatHolder {
-     position: absolute;
+     position: fixed;
      z-index: 9999;
      width: auto;
+     left: auto;
      bottom: 0% !important;
      /* left: calc(auto+ 100px)!important; */
  }
@@ -421,14 +434,14 @@
 /*Header*/
 #signedInHeaderBar{
     z-index: 100;
-    background:  #8a8a8a;
-    border: 5px solid #8a8a8a;
+    background:  var(--mainmenuclr);
+    border: 5px solid var(--mainmenuclr);
 }
 
 
 #headerRight{
     color: transparent;
-    background: #8a8a8a;
+    background: var(--mainmenuclr);
 }
 
 #editorBtnM{
@@ -438,7 +451,7 @@
 
 /*Spectate*/
 .sliderSml{
-    background-color: blue;
+    background-color: darkgrey;
 }
 
 #spectButton{
@@ -448,28 +461,28 @@
 
 /*Server*/
 .setBodH {  
-    background-color: var(--transp)
+    background-color: var(--transparent)
 }
 .setHed {
-    background-color: var(--transp);
-    color: var(--transp)
+    background-color: var(--transparent);
+    color: var(--transparent)
 }
 .setHed:hover {
-    background-color: var(--transp);
+    background-color: var(--transparent);
 }
 .setHedS {
-    border: 0px solid var(--transp);
-    background-color: var(--transp);
-    color: var(--white);
+    border: 0px solid var(--transparent);
+    background-color: var(--transparent);
+    color: var(--fff);
 }
 .quickJoin {
-    background-color: var(--transp)!important;
-    color: var(--white) !important;
+    background-color: var(--transparent)!important;
+    color: var(--fff) !important;
     
     border: 4px solid var(--outline) !important;
 }
 a, a:active, a:visited {
-    color: var(--white);
+    color: var(--fff);
     text-shadow: var(--outline);
 }
 input:checked+.slider2 {
@@ -480,7 +493,7 @@ input:checked+.slider2 {
 }
 #serverSearch {
     color: #fff;
-    background-color: var(--transp);
+    background-color: var(--transparent);
    
 } 
 
@@ -523,3 +536,110 @@ background: #fff;
     font-size: 15px;
     border-radius: 4px
 } */
+
+#krDiscountAd {
+    display: none;
+}
+#menuItemContainer{
+    left: -150px;
+    transition-duration: 1s;
+}
+
+#menuItemContainer:hover{
+    left: 0;
+}
+
+#menuItemContainer::after{
+    --h: 100px;
+    position: fixed;
+    top: 50%;
+    transform: translate(-150%);
+    content: '>';
+    font-size: 60px;
+    color: var(--fff);
+    text-align: center;
+    width: var(--h);
+    aspect-ratio: 1/ 1;
+    background-color: transparent;
+    left: 170px;
+    border-radius: 50%;
+    line-height: var(--h);
+    pointer-events: all;
+    transition: 250ms
+}
+
+#menuItemContainer:hover::after{
+    cursor: pointer;
+	}
+#krDiscountAd {
+	display: none;
+	}
+#deathsVal,
+#killsVal,
+#livesDisp,
+#streakVal,
+#myScoreVal {
+    color: var(--fff) !important;
+    bottom: 7px;
+    font-size: 36px;
+    display: flex;
+    justify-content: center;
+    text-shadow: 2px 2px 3px rgba(30, 30, 30, .5);
+}
+
+#deathsVal::after,
+#killsVal::after,
+#streakVal::after,
+#myScoreVal::after,
+#livesDisp::after {
+    display: block;
+    position: fixed;
+    margin-top: 45px;
+    font-size: 14px;
+    text-shadow: 2px 2px 3px rgba(30, 30, 30, .5);
+}
+
+#deathsVal::after {
+    content: 'Deaths';
+}
+
+#killsVal::after {
+    content: 'Kills';
+}
+
+#streakVal::after {
+    content: 'Streak';
+}
+
+#myScoreVal::after {
+    content: 'Score';
+}
+
+#livesDisp::after {
+    content: 'Lives';
+}
+
+#killsIcon,#deathsIcon,#streakIcon,#scoreCount .material-icons,#livesCount .material-icons {
+    display: none;
+}
+#streakCount {
+    position:fixed;
+    transform:translateX(-50%);
+    right:0%;
+	bottom: 70%;
+    background-color:var(--transparent);
+}
+#killCount {
+    position:fixed;
+    transform:translateX(-50%);
+    right:4.8%;
+	bottom: 70%;
+    background-color:var(--transparent);
+}
+#deathCount {
+    position:fixed;
+    transform:translateX(-50%);
+    right:2.4%;
+	bottom: 70%;
+    background-color:var(--transparent);
+}

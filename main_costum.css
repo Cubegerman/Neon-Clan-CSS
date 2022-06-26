@@ -565,11 +565,13 @@ background: #fff;
     border-radius: 50%;
     line-height: var(--h);
     pointer-events: all;
-    transition: 250ms
+    transition: 250ms;
+    opacity: 1;
 }
 
 #menuItemContainer:hover::after{
     cursor: pointer;
+    opacity: 0;
 	}
 #krDiscountAd {
 	display: none;

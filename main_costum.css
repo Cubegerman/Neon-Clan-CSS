@@ -580,7 +580,9 @@ background: #fff;
 #killsVal,
 #livesDisp,
 #streakVal,
-#myScoreVal {
+#myScoreVal,
+#kdVal,
+#scoreVal {
     color: var(--fff) !important;
     bottom: 7px;
     font-size: 36px;
@@ -593,7 +595,9 @@ background: #fff;
 #killsVal::after,
 #streakVal::after,
 #myScoreVal::after,
-#livesDisp::after {
+#livesDisp::after,
+#kdVal::after,
+#scoreVal::after {
     display: block;
     position: fixed;
     margin-top: 45px;
@@ -621,27 +625,49 @@ background: #fff;
     content: 'Lives';
 }
 
-#killsIcon,#deathsIcon,#streakIcon,#scoreCount .material-icons,#livesCount .material-icons {
+#kdVal::after {
+    content: 'KDR';
+}
+
+#killsIcon,#deathsIcon,#streakIcon,#kdIcon,#scoreCount .material-icons,#livesCount .material-icons {
     display: none;
 }
-#streakCount {
+
+#kdCount {
+    position:fixed;
+    transform:translateX(-50%);
+    right:1.2%;
+	bottom: 70%;
+    background-color:var(--transparent);
+}
+
+#scoreCount {
     position:fixed;
     transform:translateX(-50%);
     right:0%;
 	bottom: 70%;
     background-color:var(--transparent);
 }
+
+#streakCount {
+    position:fixed;
+    transform:translateX(-50%);
+    right:5.2%;
+	bottom: 70%;
+    background-color:var(--transparent);
+}
+
 #killCount {
     position:fixed;
     transform:translateX(-50%);
-    right:4.8%;
+    right:10%;
 	bottom: 70%;
     background-color:var(--transparent);
 }
 #deathCount {
     position:fixed;
     transform:translateX(-50%);
-    right:2.4%;
+    right:7.6%;
 	bottom: 70%;
     background-color:var(--transparent);
 }
@@ -649,3 +675,26 @@ background: #fff;
 #slid_healthColE{
     background: #ff8888;
 }
+
+/* #scoreCount {
+background-color: transparent;
+}
+
+#kdCount {
+background-color: transparent;
+} */
+
+ #menuItemContainer{
+    border-right: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+}
+
+
+#signedOutHeaderBar,
+#signedInHeaderBar{
+    border: solid #fff;
+    border-width: 0px 2px 2px 0px ;
+}
+
+/*  Hubbsi fix mal kdr sache */
+/* thx */

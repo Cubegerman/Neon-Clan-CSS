@@ -2,11 +2,11 @@
 Only Neon Clanmember CSS
 
 
-## How to Use?
+# How to Use?
 
 Put that in css folder of the Krunker Ressource Swapper.
 
 
-### Ideas
+# Ideas
 
 Post ideas in #clan-css-ideas on the discord

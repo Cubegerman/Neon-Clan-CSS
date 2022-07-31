@@ -71,8 +71,16 @@
 	display: none!important;
 }
 
-.menuItemTitle,#hudClassIcon, #timerIcon, #maxHP, #challIcon, #ammoMax, #ammoIcon, #reloadMsg{
+.menuItemTitle,#hudClassIcon, #timerIcon, #maxHP, #challIcon{
     display: none;
+}
+
+#doubleXPAd, #ammoMax, #ammoIcon, #reloadMsg{
+    display: none;
+}
+
+.youNewDiv{
+    background: none;
 }
 
 
@@ -81,8 +89,8 @@
     height: 15px;
     width: auto;
     will-change: unset;
-    left: 42.5%;
-    right: 42.5%;
+    left: 40%;
+    right: 40.%;
 	bottom: 9%;
 }
 
